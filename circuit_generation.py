@@ -139,7 +139,7 @@ if __name__ == "__main__":
 
     # Convert to JSON and write to file
     folder_json = json.dumps(outer_folder, indent=4)
-    output_file = "timer_folder.seconds"
+    output_file = "output/timer_folder.seconds"
     with open(output_file, "w") as file:
         file.write(folder_json)
 
