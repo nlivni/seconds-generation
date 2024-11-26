@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 from collections import OrderedDict
 
 def create_circuit_timer(identifier, name, color, cooldown, numberOfSets, type, intervals, warmup, setRest, notes, random, music, group, overrun, soundScheme, activity, intervalRest):
@@ -90,7 +91,7 @@ def test_output_structure(output_file, example_file):
     else:
         print("The structures do not match.")
 
-if __name__ == "__main__":
+def main():
     # Read the input.json file from the inputs folder
     with open('inputs/input.json', 'r') as file:
         config = json.load(file)
@@ -143,6 +144,9 @@ if __name__ == "__main__":
     with open(output_file, "w") as file:
         file.write(folder_json)
 
-    # Test the output structure
-    example_file = os.path.join("example-exports", "2 circuit timers in folder.seconds")
-    test_output_structure(output_file, example_file)
+if __name__ == "__main__":
+    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "test":
+        # Test the output structure
+        example_file = os.path.join("example-exports", "2 circuit timers in folder.seconds")
+        test_output_structure("output/timer_folder.seconds", example_file)
