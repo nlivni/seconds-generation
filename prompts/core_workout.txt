@@ -1,0 +1,44 @@
+Generate a core workout plan in JSON format with the following structure. Only include the JSON content in your response:
+{
+    "timers": [
+        {
+            "identifier": "core-identifier-1",
+            "exercises": [
+                {"name": "Plank", "duration": 30, "color": 5},
+                {"name": "Mountain Climbers", "duration": 30, "color": 5}
+            ],
+            "name": "Core Workout",
+            "color": 5,
+            "numberOfSets": 3,
+            "soundScheme": 19,
+            "overrun": false,
+            "notes": "Engage your core muscles",
+            "activity": 2,
+            "music": {
+                "resume": true,
+                "volume": 1,
+                "persist": false,
+                "shuffle": false,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Stretch",
+                "duration": 5,
+                "split": false,
+                "indefinite": false,
+                "ducked": false,
+                "rest": true,
+                "splitRest": 0,
+                "music": {
+                    "volume": 1,
+                    "resume": false,
+                    "query": {},
+                    "persist": false,
+                    "shuffle": false
+                },
+                "halfwayAlert": false,
+                "color": 3
+            }
+        }
+    ]
+}

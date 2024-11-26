@@ -1,0 +1,150 @@
+{
+    "timers": [
+        {
+            "identifier": "unique-identifier-1",
+            "exercises": [
+                {
+                    "name": "Exercise 1",
+                    "duration": 30,
+                    "color": 3
+                },
+                {
+                    "name": "Exercise 2",
+                    "duration": 30,
+                    "color": 3
+                }
+            ],
+            "name": "Timer Name 1",
+            "color": 3,
+            "numberOfSets": 1,
+            "soundScheme": 17,
+            "overrun": false,
+            "notes": "Notes for Timer 1",
+            "activity": 0,
+            "music": {
+                "resume": true,
+                "volume": 1,
+                "persist": false,
+                "shuffle": false,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Warm Up",
+                "duration": 0,
+                "split": false,
+                "indefinite": false,
+                "ducked": false,
+                "rest": true,
+                "splitRest": 0,
+                "music": {
+                    "volume": 1,
+                    "resume": false,
+                    "query": {},
+                    "persist": false,
+                    "shuffle": false
+                },
+                "halfwayAlert": false,
+                "color": 3
+            }
+        },
+        {
+            "identifier": "unique-identifier-2",
+            "exercises": [
+                {
+                    "name": "Exercise 3",
+                    "duration": 45,
+                    "color": 6
+                },
+                {
+                    "name": "Exercise 4",
+                    "duration": 45,
+                    "color": 6
+                },
+                {
+                    "name": "Exercise 5",
+                    "duration": 45,
+                    "color": 6
+                }
+            ],
+            "name": "Timer Name 2",
+            "color": 6,
+            "numberOfSets": 2,
+            "soundScheme": 18,
+            "overrun": true,
+            "notes": "Notes for Timer 2",
+            "activity": 1,
+            "music": {
+                "resume": false,
+                "volume": 0.8,
+                "persist": true,
+                "shuffle": true,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Warm Up",
+                "duration": 5,
+                "split": true,
+                "indefinite": true,
+                "ducked": true,
+                "rest": false,
+                "splitRest": 10,
+                "music": {
+                    "volume": 0.5,
+                    "resume": true,
+                    "query": {},
+                    "persist": true,
+                    "shuffle": true
+                },
+                "halfwayAlert": true,
+                "color": 4
+            }
+        },
+        {
+            "identifier": "unique-identifier-3",
+            "exercises": [
+                {
+                    "name": "Exercise 6",
+                    "duration": 30,
+                    "color": 5
+                },
+                {
+                    "name": "Exercise 7",
+                    "duration": 30,
+                    "color": 5
+                }
+            ],
+            "name": "Timer Name 3",
+            "color": 5,
+            "numberOfSets": 1,
+            "soundScheme": 19,
+            "overrun": false,
+            "notes": "Notes for Timer 3",
+            "activity": 2,
+            "music": {
+                "resume": true,
+                "volume": 1,
+                "persist": false,
+                "shuffle": false,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Warm Up",
+                "duration": 0,
+                "split": false,
+                "indefinite": false,
+                "ducked": false,
+                "rest": true,
+                "splitRest": 0,
+                "music": {
+                    "volume": 1,
+                    "resume": false,
+                    "query": {},
+                    "persist": false,
+                    "shuffle": false
+                },
+                "halfwayAlert": false,
+                "color": 3
+            }
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "timers": [
+        {
+            "identifier": "unique-identifier-1",
+            "exercises": [
+                {
+                    "name": "Jumping Jacks",
+                    "duration": 30,
+                    "color": 3
+                },
+                {
+                    "name": "Push Ups",
+                    "duration": 30,
+                    "color": 3
+                }
+            ],
+            "name": "Cardio Blast",
+            "color": 3,
+            "numberOfSets": 1,
+            "soundScheme": 17,
+            "overrun": false,
+            "notes": "Do each exercise with high intensity",
+            "activity": 0,
+            "music": {
+                "resume": true,
+                "volume": 1,
+                "persist": false,
+                "shuffle": false,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Stretching",
+                "duration": 0,
+                "split": false,
+                "indefinite": false,
+                "ducked": false,
+                "rest": true,
+                "splitRest": 0,
+                "music": {
+                    "volume": 1,
+                    "resume": false,
+                    "query": {},
+                    "persist": false,
+                    "shuffle": false
+                },
+                "halfwayAlert": false,
+                "color": 3
+            }
+        },
+        {
+            "identifier": "unique-identifier-2",
+            "exercises": [
+                {
+                    "name": "Squats",
+                    "duration": 45,
+                    "color": 6
+                },
+                {
+                    "name": "Lunges",
+                    "duration": 45,
+                    "color": 6
+                },
+                {
+                    "name": "Plank",
+                    "duration": 45,
+                    "color": 6
+                }
+            ],
+            "name": "Strength Session",
+            "color": 6,
+            "numberOfSets": 2,
+            "soundScheme": 18,
+            "overrun": true,
+            "notes": "Maintain proper form in each exercise",
+            "activity": 1,
+            "music": {
+                "resume": false,
+                "volume": 0.8,
+                "persist": true,
+                "shuffle": true,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Warm Up Jog",
+                "duration": 5,
+                "split": true,
+                "indefinite": true,
+                "ducked": true,
+                "rest": false,
+                "splitRest": 10,
+                "music": {
+                    "volume": 0.5,
+                    "resume": true,
+                    "query": {},
+                    "persist": true,
+                    "shuffle": true
+                },
+                "halfwayAlert": true,
+                "color": 4
+            }
+        },
+        {
+            "identifier": "unique-identifier-3",
+            "exercises": [
+                {
+                    "name": "Bicycle Crunches",
+                    "duration": 30,
+                    "color": 5
+                },
+                {
+                    "name": "Leg Raises",
+                    "duration": 30,
+                    "color": 5
+                }
+            ],
+            "name": "Abs Burner",
+            "color": 5,
+            "numberOfSets": 1,
+            "soundScheme": 19,
+            "overrun": false,
+            "notes": "Keep your core engaged in each exercise",
+            "activity": 2,
+            "music": {
+                "resume": true,
+                "volume": 1,
+                "persist": false,
+                "shuffle": false,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Light Stretching",
+                "duration": 0,
+                "split": false,
+                "indefinite": false,
+                "ducked": false,
+                "rest": true,
+                "splitRest": 0,
+                "music": {
+                    "volume": 1,
+                    "resume": false,
+                    "query": {},
+                    "persist": false,
+                    "shuffle": false
+                },
+                "halfwayAlert": false,
+                "color": 3
+            }
+        }
+    ]
+}

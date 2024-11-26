@@ -1,0 +1,44 @@
+Generate a strength training workout plan in JSON format with the following structure. Only include the JSON content in your response:
+{
+    "timers": [
+        {
+            "identifier": "strength-identifier-1",
+            "exercises": [
+                {"name": "Push Ups", "duration": 30, "color": 3},
+                {"name": "Sit Ups", "duration": 30, "color": 3}
+            ],
+            "name": "Strength Training",
+            "color": 3,
+            "numberOfSets": 3,
+            "soundScheme": 17,
+            "overrun": false,
+            "notes": "Focus on form",
+            "activity": 0,
+            "music": {
+                "resume": true,
+                "volume": 1,
+                "persist": false,
+                "shuffle": false,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Jog",
+                "duration": 5,
+                "split": false,
+                "indefinite": false,
+                "ducked": false,
+                "rest": true,
+                "splitRest": 0,
+                "music": {
+                    "volume": 1,
+                    "resume": false,
+                    "query": {},
+                    "persist": false,
+                    "shuffle": false
+                },
+                "halfwayAlert": false,
+                "color": 3
+            }
+        }
+    ]
+}

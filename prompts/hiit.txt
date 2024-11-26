@@ -1,0 +1,53 @@
+Generate a HIIT workout plan in JSON format with the following structure. Only include the JSON content in your response:
+
+The warmup should last 5-7 minutes total. Pick 2-10 light activities that appropriately warm up for the main workout. Rest between intervals should be about half that of the timer.
+
+The main workout should represent a HIIT workout lasting 15 minutes. Intervals could last between 20 and 40 seconds and go in a circuit. Tabata should be true.
+
+Cooldown should be similar to warmup but instead be longer active stretches focusing on the muscles used in the main workout.
+
+1. Warmup:
+   - Identifier: hiit-warmup-identifier
+   - Exercises: 
+     - Jumping Jacks for 45 seconds (color: 3)
+     - High Knees for 45 seconds (color: 3)
+   - Name: Warmup
+   - Color: 3
+   - Number of Sets: 2
+   - Sound Scheme: 17
+   - Overrun: false
+   - Notes: Get your body ready for the workout
+   - Activity: 0
+   - Music: Resume: true, Volume: 1, Persist: false, Shuffle: false, Query: {}
+   - Name: Warm Up, Duration: 0, Split: false, Indefinite: false, Ducked: false, Rest: true, Split Rest: 0, Music: Volume: 1, Resume: false, Query: {}, Persist: false, Shuffle: false, Halfway Alert: false, Color: 3
+
+2. Workout:
+   - Identifier: hiit-workout-identifier
+   - Exercises: 
+     - Burpees for 45 seconds (color: 6)
+     - Mountain Climbers for 45 seconds (color: 6)
+     - Squat Jumps for 45 seconds (color: 6)
+   - Name: Workout
+   - Color: 6
+   - Number of Sets: 3
+   - Sound Scheme: 18
+   - Overrun: true
+   - Notes: High intensity interval training
+   - Activity: 1
+   - Music: Resume: false, Volume: 0.8, Persist: true, Shuffle: true, Query: {}
+   - Warmup: Name: Warm Up, Duration: 5, Split: true, Indefinite: true, Ducked: true, Rest: false, Split Rest: 10, Music: Volume: 0.5, Resume: true, Query: {}, Persist: true, Shuffle: true, Halfway Alert: true, Color: 4
+
+3. Cooldown:
+   - Identifier: hiit-cooldown-identifier
+   - Exercises: 
+     - Stretching for 60 seconds (color: 5)
+     - Deep Breathing for 60 seconds (color: 5)
+   - Name: Cooldown
+   - Color: 5
+   - Number of Sets: 1
+   - Sound Scheme: 19
+   - Overrun: false
+   - Notes: Cool down and relax your muscles
+   - Activity: 2
+   - Music: Resume: true, Volume: 1, Persist: false, Shuffle: false, Query: {}
+   - Warmup: Name: Warm Up, Duration: 0, Split: false, Indefinite: false, Ducked: false, Rest: true, Split Rest: 0, Music: Volume: 1, Resume: false, Query: {}, Persist: false, Shuffle: false, Halfway Alert: false, Color: 3

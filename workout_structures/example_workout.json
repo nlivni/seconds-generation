@@ -1,17 +1,17 @@
 {
     "timers": [
         {
-            "identifier": "8F1311E0-4D59-4A82-A4CC-5901FA6FB7AF",
-            "intervals": [
-                {"name": "Warmup 1", "duration": 30, "color": 3},
-                {"name": "Warmup 2", "duration": 30, "color": 3}
+            "identifier": "hiit-warmup-identifier",
+            "exercises": [
+                {"name": "Jumping Jacks", "duration": 60, "color": 3},
+                {"name": "High Knees", "duration": 60, "color": 3}
             ],
-            "name": "Warmup Timer",
+            "name": "Warmup",
             "color": 3,
             "numberOfSets": 1,
             "soundScheme": 17,
             "overrun": false,
-            "notes": "Warmup exercises",
+            "notes": "Get your body ready for the workout",
             "activity": 0,
             "music": {
                 "resume": true,
@@ -39,55 +39,49 @@
                 "color": 3
             },
             "intervalRest": {
-                "name": "Rest",
-                "duration": 10,
-                "color": 1,
-                "music": {
-                    "volume": 1,
-                    "resume": false,
-                    "persist": false,
-                    "shuffle": false,
-                    "query": {}
-                },
-                "split": false,
                 "indefinite": false,
+                "music": {"persist": false, "shuffle": false, "volume": 1, "query": {}, "resume": false},
+                "halfwayAlert": false,
+                "split": false,
                 "ducked": false,
-                "rest": true,
                 "splitRest": 0,
-                "halfwayAlert": false
+                "rest": true,
+                "duration": 10,
+                "name": "Rest",
+                "color": 1
             },
             "setRest": {
-                "name": "Rest",
-                "duration": 15,
+                "ducked": false,
+                "duration": 10,
+                "split": false,
                 "color": 1,
+                "splitRest": 0,
+                "name": "Rest",
+                "halfwayAlert": false,
+                "rest": true,
                 "music": {
-                    "volume": 1,
-                    "resume": false,
                     "persist": false,
                     "shuffle": false,
-                    "query": {}
+                    "query": {},
+                    "volume": 1,
+                    "resume": false
                 },
-                "split": false,
-                "indefinite": false,
-                "ducked": false,
-                "rest": true,
-                "splitRest": 0,
-                "halfwayAlert": false
+                "indefinite": false
             }
         },
         {
-            "identifier": "9F1311E0-4D59-4A82-A4CC-5901FA6FB7AF",
-            "intervals": [
-                {"name": "Main 1", "duration": 45, "color": 6},
-                {"name": "Main 2", "duration": 45, "color": 6},
-                {"name": "Main 3", "duration": 45, "color": 6}
+            "identifier": "hiit-workout-identifier",
+            "exercises": [
+                {"name": "Burpees", "duration": 45, "color": 6},
+                {"name": "Mountain Climbers", "duration": 45, "color": 6},
+                {"name": "Squat Jumps", "duration": 45, "color": 6}
             ],
-            "name": "Main Timer",
+            "name": "Workout",
             "color": 6,
-            "numberOfSets": 2,
+            "numberOfSets": 3,
             "soundScheme": 18,
             "overrun": true,
-            "notes": "Main exercises",
+            "notes": "High intensity interval training",
             "activity": 1,
             "music": {
                 "resume": false,
@@ -115,54 +109,48 @@
                 "color": 4
             },
             "intervalRest": {
-                "name": "Rest",
-                "duration": 10,
-                "color": 1,
-                "music": {
-                    "volume": 1,
-                    "resume": false,
-                    "persist": false,
-                    "shuffle": false,
-                    "query": {}
-                },
-                "split": false,
                 "indefinite": false,
+                "music": {"persist": false, "shuffle": false, "volume": 1, "query": {}, "resume": false},
+                "halfwayAlert": false,
+                "split": false,
                 "ducked": false,
-                "rest": true,
                 "splitRest": 0,
-                "halfwayAlert": false
+                "rest": true,
+                "duration": 10,
+                "name": "Rest",
+                "color": 1
             },
             "setRest": {
-                "name": "Rest",
-                "duration": 15,
+                "ducked": false,
+                "duration": 10,
+                "split": false,
                 "color": 1,
+                "splitRest": 0,
+                "name": "Rest",
+                "halfwayAlert": false,
+                "rest": true,
                 "music": {
-                    "volume": 1,
-                    "resume": false,
                     "persist": false,
                     "shuffle": false,
-                    "query": {}
+                    "query": {},
+                    "volume": 1,
+                    "resume": false
                 },
-                "split": false,
-                "indefinite": false,
-                "ducked": false,
-                "rest": true,
-                "splitRest": 0,
-                "halfwayAlert": false
+                "indefinite": false
             }
         },
         {
-            "identifier": "AF1311E0-4D59-4A82-A4CC-5901FA6FB7AF",
-            "intervals": [
-                {"name": "Cooldown 1", "duration": 30, "color": 5},
-                {"name": "Cooldown 2", "duration": 30, "color": 5}
+            "identifier": "hiit-cooldown-identifier",
+            "exercises": [
+                {"name": "Stretching", "duration": 60, "color": 5},
+                {"name": "Deep Breathing", "duration": 60, "color": 5}
             ],
-            "name": "Cooldown Timer",
+            "name": "Cooldown",
             "color": 5,
             "numberOfSets": 1,
             "soundScheme": 19,
             "overrun": false,
-            "notes": "Cooldown exercises",
+            "notes": "Cool down and relax your muscles",
             "activity": 2,
             "music": {
                 "resume": true,
@@ -190,40 +178,34 @@
                 "color": 3
             },
             "intervalRest": {
-                "name": "Rest",
-                "duration": 10,
-                "color": 1,
-                "music": {
-                    "volume": 1,
-                    "resume": false,
-                    "persist": false,
-                    "shuffle": false,
-                    "query": {}
-                },
-                "split": false,
                 "indefinite": false,
+                "music": {"persist": false, "shuffle": false, "volume": 1, "query": {}, "resume": false},
+                "halfwayAlert": false,
+                "split": false,
                 "ducked": false,
-                "rest": true,
                 "splitRest": 0,
-                "halfwayAlert": false
+                "rest": true,
+                "duration": 10,
+                "name": "Rest",
+                "color": 1
             },
             "setRest": {
-                "name": "Rest",
-                "duration": 15,
+                "ducked": false,
+                "duration": 10,
+                "split": false,
                 "color": 1,
+                "splitRest": 0,
+                "name": "Rest",
+                "halfwayAlert": false,
+                "rest": true,
                 "music": {
-                    "volume": 1,
-                    "resume": false,
                     "persist": false,
                     "shuffle": false,
-                    "query": {}
+                    "query": {},
+                    "volume": 1,
+                    "resume": false
                 },
-                "split": false,
-                "indefinite": false,
-                "ducked": false,
-                "rest": true,
-                "splitRest": 0,
-                "halfwayAlert": false
+                "indefinite": false
             }
         }
     ]
