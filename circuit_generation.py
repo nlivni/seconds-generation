@@ -99,9 +99,6 @@ if __name__ == "__main__":
 
     for timer_config in config['timers']:
         identifier = timer_config['identifier']
-        num_warmups = timer_config['num_warmups']
-        num_main = timer_config['num_main']
-        num_cooldowns = timer_config['num_cooldowns']
         exercise_duration = timer_config['exercise_duration']
         name = timer_config['name']
         color = timer_config['color']
@@ -113,66 +110,20 @@ if __name__ == "__main__":
         music = timer_config['music']
         warmup = timer_config['warmup']
 
-        # Generate warmup exercises
-        warmup_exercises = [generate_exercise(f"Warmup {i+1}", exercise_duration, color=color) for i in range(num_warmups)]
-
-        # Generate main exercises
-        main_exercises = [generate_exercise(f"Exercise {i+1}", exercise_duration, color=color) for i in range(num_main)]
-
-        # Generate cooldown exercises
-        cooldown_exercises = [generate_exercise(f"Cooldown {i+1}", exercise_duration, color=color) for i in range(num_cooldowns)]
-
-        # Example cooldown and intervalRest
-        cooldown = {
-            "rest": True,
-            "name": "Cool Down",
-            "color": 5,
-            "split": False,
-            "halfwayAlert": False,
-            "duration": 0,
-            "music": {"persist": False, "shuffle": False, "resume": False, "query": {}, "volume": 1},
-            "indefinite": False,
-            "ducked": False,
-            "splitRest": 0
-        }
-
-        intervalRest = {
-            "ducked": False,
-            "halfwayAlert": False,
-            "duration": 15,
-            "splitRest": 0,
-            "split": False,
-            "indefinite": False,
-            "rest": True,
-            "music": {"volume": 1, "resume": False, "persist": False, "query": {}, "shuffle": False},
-            "name": "Rest",
-            "color": 1
-        }
-
-        setRest = {
-            "split": False,
-            "duration": 0,
-            "indefinite": False,
-            "music": {"persist": False, "query": {}, "resume": False, "shuffle": False, "volume": 1},
-            "color": 3,
-            "splitRest": 0,
-            "name": "Warm Up",
-            "halfwayAlert": False,
-            "ducked": False,
-            "rest": True
-        }
+        # Generate exercises
+        exercises = [generate_exercise(f"Exercise {i+1}", exercise_duration, color=color) for i in range(timer_config['num_warmups'] + timer_config['num_main'] + timer_config['num_cooldowns'])]
 
         # Create circuit timer
         circuit_timer = create_circuit_timer(
             identifier=identifier,
             name=name,
             color=color,
-            cooldown=cooldown,
+            cooldown=None,
             numberOfSets=numberOfSets,
             type=3,
-            intervals=warmup_exercises + main_exercises + cooldown_exercises,
-            warmup=warmup,
-            setRest=setRest,
+            intervals=exercises,
+            warmup=None,
+            setRest=None,
             notes=notes,
             random=True,
             music=music,
@@ -180,7 +131,7 @@ if __name__ == "__main__":
             overrun=overrun,
             soundScheme=soundScheme,
             activity=activity,
-            intervalRest=intervalRest
+            intervalRest=None
         )
 
         timers.append(circuit_timer)
