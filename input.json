@@ -2,9 +2,7 @@
     "timers": [
         {
             "identifier": "8F1311E0-4D59-4A82-A4CC-5901FA6FB7AF",
-            "num_warmups": 2,
-            "num_main": 0,
-            "num_cooldowns": 0,
+            "num_exercises": 2,
             "exercise_duration": 30,
             "name": "Warmup Timer",
             "color": 3,
@@ -41,9 +39,7 @@
         },
         {
             "identifier": "9F1311E0-4D59-4A82-A4CC-5901FA6FB7AF",
-            "num_warmups": 0,
-            "num_main": 3,
-            "num_cooldowns": 0,
+            "num_exercises": 3,
             "exercise_duration": 45,
             "name": "Main Timer",
             "color": 6,
@@ -80,9 +76,7 @@
         },
         {
             "identifier": "AF1311E0-4D59-4A82-A4CC-5901FA6FB7AF",
-            "num_warmups": 0,
-            "num_main": 0,
-            "num_cooldowns": 2,
+            "num_exercises": 2,
             "exercise_duration": 30,
             "name": "Cooldown Timer",
             "color": 5,

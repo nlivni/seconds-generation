@@ -109,9 +109,10 @@ if __name__ == "__main__":
         activity = timer_config['activity']
         music = timer_config['music']
         warmup = timer_config['warmup']
+        num_exercises = timer_config['num_exercises']
 
         # Generate exercises
-        exercises = [generate_exercise(f"Exercise {i+1}", exercise_duration, color=color) for i in range(timer_config['num_warmups'] + timer_config['num_main'] + timer_config['num_cooldowns'])]
+        exercises = [generate_exercise(f"Exercise {i+1}", exercise_duration, color=color) for i in range(num_exercises)]
 
         # Create circuit timer
         circuit_timer = create_circuit_timer(
