@@ -2,6 +2,7 @@ import json
 import os
 import sys
 from collections import OrderedDict
+from datetime import datetime
 
 def create_circuit_timer(identifier, name, color, cooldown, numberOfSets, type, intervals, warmup, setRest, notes, random, music, group, overrun, soundScheme, activity, intervalRest):
     circuit_timer = OrderedDict([
@@ -91,9 +92,9 @@ def test_output_structure(output_file, example_file):
     else:
         print("The structures do not match.")
 
-def main():
-    # Read the input.json file from the inputs folder
-    with open('inputs/input.json', 'r') as file:
+def main(input_file):
+    # Read the input JSON file from the specified path
+    with open(input_file, 'r') as file:
         config = json.load(file)
 
     timers = []
@@ -139,14 +140,22 @@ def main():
     outer_folder = create_folder("Exported Items", "972BEE15-AEAE-4FD8-9783-C80A79A36F94", [inner_folder])
 
     # Convert to JSON and write to file
+    timestamp = datetime.now().strftime("%m-%d-%H-%M")
+    output_file = f"output/{os.path.splitext(os.path.basename(input_file))[0]}_{timestamp}.seconds"
     folder_json = json.dumps(outer_folder, indent=4)
-    output_file = "output/timer_folder.seconds"
     with open(output_file, "w") as file:
         file.write(folder_json)
 
 if __name__ == "__main__":
-    main()
-    if len(sys.argv) > 1 and sys.argv[1] == "test":
+    if len(sys.argv) < 2:
+        print("Usage: python circuit_generation.py <input_file> [test]")
+        sys.exit(1)
+
+    input_file = sys.argv[1]
+    main(input_file)
+
+    if len(sys.argv) > 2 and sys.argv[2] == "test":
         # Test the output structure
         example_file = os.path.join("example-exports", "2 circuit timers in folder.seconds")
-        test_output_structure("output/timer_folder.seconds", example_file)
+        timestamp = datetime.now().strftime("%m-%d-%H-%M")
+        test_output_structure(f"output/{os.path.splitext(os.path.basename(input_file))[0]}_{timestamp}.seconds", example_file)

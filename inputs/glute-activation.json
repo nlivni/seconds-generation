@@ -1,0 +1,122 @@
+{
+    "timers": [
+        {
+            "identifier": "8F1311E0-4D59-4A82-A4CC-5901FA6FB7AF",
+            "exercises": [
+                {"name": "Warmup 1", "duration": 30, "color": 3},
+                {"name": "Warmup 2", "duration": 30, "color": 3}
+            ],
+            "name": "Warmup Timer",
+            "color": 3,
+            "numberOfSets": 1,
+            "soundScheme": 17,
+            "overrun": false,
+            "notes": "Warmup exercises",
+            "activity": 0,
+            "music": {
+                "resume": true,
+                "volume": 1,
+                "persist": false,
+                "shuffle": false,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Warm Up",
+                "duration": 0,
+                "split": false,
+                "indefinite": false,
+                "ducked": false,
+                "rest": true,
+                "splitRest": 0,
+                "music": {
+                    "volume": 1,
+                    "resume": false,
+                    "query": {},
+                    "persist": false,
+                    "shuffle": false
+                },
+                "halfwayAlert": false,
+                "color": 3
+            }
+        },
+        {
+            "identifier": "9F1311E0-4D59-4A82-A4CC-5901FA6FB7AF",
+            "exercises": [
+                {"name": "Main 1", "duration": 45, "color": 6},
+                {"name": "Main 2", "duration": 45, "color": 6},
+                {"name": "Main 3", "duration": 45, "color": 6}
+            ],
+            "name": "Main Timer",
+            "color": 6,
+            "numberOfSets": 2,
+            "soundScheme": 18,
+            "overrun": true,
+            "notes": "Main exercises",
+            "activity": 1,
+            "music": {
+                "resume": false,
+                "volume": 0.8,
+                "persist": true,
+                "shuffle": true,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Warm Up",
+                "duration": 5,
+                "split": true,
+                "indefinite": true,
+                "ducked": true,
+                "rest": false,
+                "splitRest": 10,
+                "music": {
+                    "volume": 0.5,
+                    "resume": true,
+                    "query": {},
+                    "persist": true,
+                    "shuffle": true
+                },
+                "halfwayAlert": true,
+                "color": 4
+            }
+        },
+        {
+            "identifier": "AF1311E0-4D59-4A82-A4CC-5901FA6FB7AF",
+            "exercises": [
+                {"name": "Cooldown 1", "duration": 30, "color": 5},
+                {"name": "Cooldown 2", "duration": 30, "color": 5}
+            ],
+            "name": "Cooldown Timer",
+            "color": 5,
+            "numberOfSets": 1,
+            "soundScheme": 19,
+            "overrun": false,
+            "notes": "Cooldown exercises",
+            "activity": 2,
+            "music": {
+                "resume": true,
+                "volume": 1,
+                "persist": false,
+                "shuffle": false,
+                "query": {}
+            },
+            "warmup": {
+                "name": "Warm Up",
+                "duration": 0,
+                "split": false,
+                "indefinite": false,
+                "ducked": false,
+                "rest": true,
+                "splitRest": 0,
+                "music": {
+                    "volume": 1,
+                    "resume": false,
+                    "query": {},
+                    "persist": false,
+                    "shuffle": false
+                },
+                "halfwayAlert": false,
+                "color": 3
+            }
+        }
+    ]
+}
