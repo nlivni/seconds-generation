@@ -91,15 +91,14 @@ def test_output_structure(output_file, example_file):
         print("The structures do not match.")
 
 if __name__ == "__main__":
-    # Read the input.json file
-    with open('input.json', 'r') as file:
+    # Read the input.json file from the inputs folder
+    with open('inputs/input.json', 'r') as file:
         config = json.load(file)
 
     timers = []
 
     for timer_config in config['timers']:
         identifier = timer_config['identifier']
-        exercise_duration = timer_config['exercise_duration']
         name = timer_config['name']
         color = timer_config['color']
         numberOfSets = timer_config['numberOfSets']
@@ -109,10 +108,7 @@ if __name__ == "__main__":
         activity = timer_config['activity']
         music = timer_config['music']
         warmup = timer_config['warmup']
-        num_exercises = timer_config['num_exercises']
-
-        # Generate exercises
-        exercises = [generate_exercise(f"Exercise {i+1}", exercise_duration, color=color) for i in range(num_exercises)]
+        exercises = timer_config['exercises']
 
         # Create circuit timer
         circuit_timer = create_circuit_timer(

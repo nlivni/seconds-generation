@@ -11,40 +11,14 @@
                     "numberOfSets": 1,
                     "intervals": [
                         {
-                            "name": "Exercise 1",
+                            "name": "Warmup 1",
                             "duration": 30,
-                            "split": false,
-                            "color": 3,
-                            "halfwayAlert": false,
-                            "ducked": false,
-                            "splitRest": 0,
-                            "indefinite": false,
-                            "rest": false,
-                            "music": {
-                                "resume": false,
-                                "persist": false,
-                                "query": {},
-                                "shuffle": false,
-                                "volume": 1
-                            }
+                            "color": 3
                         },
                         {
-                            "name": "Exercise 2",
+                            "name": "Warmup 2",
                             "duration": 30,
-                            "split": false,
-                            "color": 3,
-                            "halfwayAlert": false,
-                            "ducked": false,
-                            "splitRest": 0,
-                            "indefinite": false,
-                            "rest": false,
-                            "music": {
-                                "resume": false,
-                                "persist": false,
-                                "query": {},
-                                "shuffle": false,
-                                "volume": 1
-                            }
+                            "color": 3
                         }
                     ],
                     "activity": 0,
@@ -73,58 +47,19 @@
                     "numberOfSets": 2,
                     "intervals": [
                         {
-                            "name": "Exercise 1",
+                            "name": "Main 1",
                             "duration": 45,
-                            "split": false,
-                            "color": 6,
-                            "halfwayAlert": false,
-                            "ducked": false,
-                            "splitRest": 0,
-                            "indefinite": false,
-                            "rest": false,
-                            "music": {
-                                "resume": false,
-                                "persist": false,
-                                "query": {},
-                                "shuffle": false,
-                                "volume": 1
-                            }
+                            "color": 6
                         },
                         {
-                            "name": "Exercise 2",
+                            "name": "Main 2",
                             "duration": 45,
-                            "split": false,
-                            "color": 6,
-                            "halfwayAlert": false,
-                            "ducked": false,
-                            "splitRest": 0,
-                            "indefinite": false,
-                            "rest": false,
-                            "music": {
-                                "resume": false,
-                                "persist": false,
-                                "query": {},
-                                "shuffle": false,
-                                "volume": 1
-                            }
+                            "color": 6
                         },
                         {
-                            "name": "Exercise 3",
+                            "name": "Main 3",
                             "duration": 45,
-                            "split": false,
-                            "color": 6,
-                            "halfwayAlert": false,
-                            "ducked": false,
-                            "splitRest": 0,
-                            "indefinite": false,
-                            "rest": false,
-                            "music": {
-                                "resume": false,
-                                "persist": false,
-                                "query": {},
-                                "shuffle": false,
-                                "volume": 1
-                            }
+                            "color": 6
                         }
                     ],
                     "activity": 1,
@@ -153,40 +88,14 @@
                     "numberOfSets": 1,
                     "intervals": [
                         {
-                            "name": "Exercise 1",
+                            "name": "Cooldown 1",
                             "duration": 30,
-                            "split": false,
-                            "color": 5,
-                            "halfwayAlert": false,
-                            "ducked": false,
-                            "splitRest": 0,
-                            "indefinite": false,
-                            "rest": false,
-                            "music": {
-                                "resume": false,
-                                "persist": false,
-                                "query": {},
-                                "shuffle": false,
-                                "volume": 1
-                            }
+                            "color": 5
                         },
                         {
-                            "name": "Exercise 2",
+                            "name": "Cooldown 2",
                             "duration": 30,
-                            "split": false,
-                            "color": 5,
-                            "halfwayAlert": false,
-                            "ducked": false,
-                            "splitRest": 0,
-                            "indefinite": false,
-                            "rest": false,
-                            "music": {
-                                "resume": false,
-                                "persist": false,
-                                "query": {},
-                                "shuffle": false,
-                                "volume": 1
-                            }
+                            "color": 5
                         }
                     ],
                     "activity": 2,
